@@ -1,0 +1,164 @@
+/* Default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: sans-serif;
+    font-size: 16px;
+    background-image: url(pexels-lisa-fotios-2528324.jpg);
+    background-repeat: no-repeat;
+  background-size: cover;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    position: sticky;
+    z-index: 2;
+    top:0;
+  }
+  
+  h1, h2 {
+    margin: 0;
+  }
+  
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    padding: 1rem;
+  }
+  
+  .weather-info, .forecast {
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 1rem;
+    margin-top: 4rem;
+  }
+  
+  .weather-data, .forecast-data {
+    margin-top: 10 px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+  }
+  h2{
+    margin-bottom: 20px;
+  }
+  
+  .icon {
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+  }
+  
+  .temperature {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .data{
+  
+    margin-bottom: 0.5em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-around;
+  }
+  
+  /* Media queries */
+  @media (max-width: 768px) {
+    .main {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .search-field {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    font-size: 16px;
+    outline: none;
+    margin:10px;
+}
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin:10px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: auto;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* Animation styles */
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.fade-in {
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+}
+
+ul.data {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+.card {
+  width: 220px;
+  height:220px;
+  display: flex;
+  background-color: #f9f9f9;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  padding: 1em;
+  margin:1em;
+  overflow: hidden;
+}
+
+.card h2 {
+  margin: 10px;
+  justify-content: center;
+  color: rgb(27, 27, 27);
+}
+
+.card p {
+ 
+  font-size: 45 em;
+  font-weight: bold;
+  /* set the maximum width and height of the paragraph to fit inside the card */
+  max-width: 90%;
+  max-height: 90%;
+  /* add some padding and margin */
+  padding: 10px;
+  
+  /* add some overflow and text styles */
+
+  text-align: justify;
+  
+
+}
